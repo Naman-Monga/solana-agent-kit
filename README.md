@@ -471,6 +471,19 @@ Update the address a drift vault is delegated to.
 const signature = await agent.updateDriftVaultDelegate("41Y8C4oxk4zgJT1KXyQr35UhZcfsp5mP86Z2G7UUzojU", "new-address")
 ```
 
+### Get Marlin TEE Attestation
+
+Fetch a remote attestation from a Marlin Oyster Enclave.
+
+```typescript
+// Get attestation from default endpoint (localhost:1350)
+const result = await agent.getMarlinAttestation();
+
+// Or specify a custom endpoint
+const customResult = await agent.getMarlinAttestation("http://127.0.0.1:1800");
+```
+
+
 ## Examples
 
 ### LangGraph Multi-Agent System
