@@ -25,6 +25,7 @@ export * from "./sns";
 export * from "./lightprotocol";
 export * from "./squads";
 export * from "./helius";
+export * from "./marlin";
 
 import { SolanaAgentKit } from "../agent";
 import {
@@ -98,6 +99,7 @@ import {
   SolanaDeleteHeliusWebhookTool,
   SolanaParseTransactionHeliusTool,
   SolanaGetAllAssetsByOwner,
+  MarlinGetAttestationTool,
 } from "./index";
 
 export function createSolanaTools(solanaKit: SolanaAgentKit) {
@@ -177,5 +179,6 @@ export function createSolanaTools(solanaKit: SolanaAgentKit) {
     new SolanaHeliusWebhookTool(solanaKit),
     new SolanaGetHeliusWebhookTool(solanaKit),
     new SolanaDeleteHeliusWebhookTool(solanaKit),
+    new MarlinGetAttestationTool(solanaKit),
   ];
 }

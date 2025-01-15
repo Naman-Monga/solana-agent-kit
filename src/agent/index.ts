@@ -97,6 +97,7 @@ import {
   withdrawFromDriftUserAccount,
   withdrawFromDriftVault,
   updateVaultDelegate,
+  getMarlinAttestation,
 } from "../tools";
 import {
   Config,
@@ -806,5 +807,8 @@ export class SolanaAgentKit {
   }
   async updateDriftVaultDelegate(vaultAddress: string, delegate: string) {
     return await updateVaultDelegate(this, vaultAddress, delegate);
+  }
+  async getMarlinAttestation() {
+    return await getMarlinAttestation();
   }
 }
