@@ -58,6 +58,7 @@ import withdrawFromDriftAccountAction from "./drift/withdrawFromDriftAccount";
 import driftUserAccountInfoAction from "./drift/driftUserAccountInfo";
 import deriveDriftVaultAddressAction from "./drift/deriveVaultAddress";
 import updateDriftVaultDelegateAction from "./drift/updateDriftVaultDelegate";
+import getAttestationAction from "./marlin/get_attestation";
 
 export const ACTIONS = {
   WALLET_ADDRESS_ACTION: getWalletAddressAction,
@@ -121,6 +122,7 @@ export const ACTIONS = {
   DRIFT_USER_ACCOUNT_INFO_ACTION: driftUserAccountInfoAction,
   DERIVE_DRIFT_VAULT_ADDRESS_ACTION: deriveDriftVaultAddressAction,
   UPDATE_DRIFT_VAULT_DELEGATE_ACTION: updateDriftVaultDelegateAction,
+  GET_MARLIN_ATTESTATION: getAttestationAction,
 };
 
 export type { Action, ActionExample, Handler } from "../types/action";
